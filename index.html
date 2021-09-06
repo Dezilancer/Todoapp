@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoapp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="popup" class="popup hidden ">
+        <div class="messageDiv">
+            <h3>Input is Empty!</h3>
+            <p>Please enter task to save in your Todo list.</p>
+            <div>
+                <button onclick="closePopup()"> Close </button>
+            </div>
+        </div>
+        
+        
+    </div>
+    <h1 class="heading">Schedule your day</h1>
+    </div>
+    <div id="date" class="date"></div>
+    </div>
+    <div class="container main-div">
+        <div class="header">
+            <!-- imput-item -->
+            <input id="input" class="field" type="text" placeholder="Write your today's tasks here">
+            <input class="todo_btn" onclick="addTodo()" type="button" id="add" value="ADD">
+        </div>
+        <div class="clear">
+            <i id="clear" onclick="delAll()" class="btn fa fa-refresh"> </i>
+        </div>
+        <ul class="list" id="list">
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script>
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyABeS6poltHWdjve4VuhxO0Dpuz5bj_fGY",
+            authDomain: "scheduleday.firebaseapp.com",
+            databaseURL: "https://scheduleday.firebaseio.com",
+            projectId: "scheduleday",
+            storageBucket: "scheduleday.appspot.com",
+            messagingSenderId: "596946737698",
+            appId: "1:596946737698:web:b9eedadda87a09ecb5087b",
+            measurementId: "G-LR60D0CVP2"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+
+    </script>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
